@@ -4,13 +4,10 @@
 const double = () => {return 2 * n}
 
 function forEach(arr, callback) {
-    let result = [];
     for (let i = 0; i < arr.length; i++) {
-        let element = arr[i];
-        let result = callback(element);
-        let results.push(result);
+        let result = callback(arr[i]);
     }
-    return results;
+    return undefined; // for each function always returns undefined.
 }
 
 function map(arr, callback) {
